@@ -1,0 +1,33 @@
+1.导入 VVRoomUIKit、VVRoomPeerconnection、VVClassKit  sdk文件
+
+2.引入头文件 #import <VVClassKit/VVClassKit.h>
+
+3.AppDelegate.m 文件中
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.loginVC = [[VVLogInControlle alloc] init];
+
+//window:主窗口     loginVC:自定义控制器
+
+    [[VVClassManager shareManager] launchingWithWindow:self.window loginvc:self.loginVC];
+    [self.window makeKeyAndVisible];
+    return YES;
+}
+
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+
+        UIApplication *applications = [UIApplication sharedApplication];
+        [applications setKeepAliveTimeout:600 handler:^{
+            //重连服务器
+            [[VVClassManager shareManager] reConnect];
+        }];
+}
+
+4.登录
+    [[VVClassManager shareManager]loginWithAccont:_accountTextFiled.text  //房间号
+                                         password:_passwordTextFiled.text //房间密码
+                                             nick:_nikeTestFiled.text];   //昵称
+

@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  VVRoom
+
+  Created by Apple on 2018/3/30.
+  Copyright © 2018年 Apple. All rights reserved.
+*/
+"calassTitle"       = "亮眼课堂";
+"waitClass"         = "等待上课";
+"classPatrol"       = "上课中";
+"Attend"            = "上课中";
+"onClass"           = "上课中";
+"spaceClass"        = "课堂编号不能有空格";
+"classNumberSpace"  = "课堂编号不能为空";
+"logOutClass"       = "退出课堂";
+///////////////////////////////////////////
+"doNoteacherLogin"  = "暂不支持该角色登录";
+"doNoAssistantLogin" = "暂不支持该角色登录";
+"connectionDid"     = "连接已断开";
+"onCnnection"       = "已连接";
+"onCheakNetWork"    = "请检查网络";
+"onSend"            = "发送";
+"noNetwork"         = "好像没有网了";
+"rormatNotSupport"  = "格式暂时不支持";
+"logOut"            = "注销";
+"whiteBoard"        = "涂鸦白板";
+"uploadFile"        = "上传课件";
+"wellcome"          = "欢迎";
+"videoFailure"      = "视频设备启用失败";
+"nikeNameSpace"     = "昵称不能为空";
+"passWordSpace"     = "密码不能为空";
+"video"             = "视频";
+"peers"             = "成员";
+"haveVerSion"       = "有更精彩的版本啦";
+"upData"            = "更新";
+"oldData"           = "我是怀旧派";
+"LoginOut"          = "您已经被管理员移出房间";
+"visitorNoAudio"    = "请先点击申请开启音频";
+"visitorNoVideo"    = "请先点击申请开启视频";
+"sendRequestPresent"    = "已发送申请开启音视频";
+"waitShare"         = "等待屏幕共享";
+"shareScreen"       = "屏幕共享";
+"rejectedPeerMax"   = "当前课堂人员已满";
+"notAuth"           = "当前无权限，请举手";
+
