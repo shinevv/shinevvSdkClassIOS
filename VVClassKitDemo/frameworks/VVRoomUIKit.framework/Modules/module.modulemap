@@ -1,0 +1,6 @@
+framework module VVRoomUIKit {
+  umbrella header "VVRoomUIKit.h"
+
+  export *
+  module * { export * }
+}

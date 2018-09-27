@@ -1,0 +1,6 @@
+framework module VVClassKit {
+  umbrella header "VVClassKit.h"
+
+  export *
+  module * { export * }
+}
