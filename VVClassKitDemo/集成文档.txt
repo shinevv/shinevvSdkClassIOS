@@ -1,4 +1,7 @@
 1.导入 VVRoomUIKit、VVRoomPeerconnection、VVClassKit  sdk文件
+  导入VVRoomUIKit下 VVImage.bundle;
+  导入VVClassKit下 IQKeyboardManager.bundle、MJRefresh.bundle、VVClass.bundle
+  导入文件Localizable.strings、VVLogInControlle.h、VVLogInControlle.m、VVLogInControlle.xib
 
 2.引入头文件 #import <VVClassKit/VVClassKit.h>
 
@@ -31,3 +34,9 @@
                                          password:_passwordTextFiled.text //房间密码
                                              nick:_nikeTestFiled.text];   //昵称
 
+
+5.设置  Build Settings 
+   Enable Bitcode         设置为  NO
+   Other Linker Flags     设置为 -ObjC
+
+注意：导入UIRoomUIKit.framework  和  VVRoomPeerconnection.framework  时 需要添加到 General->embedded Binaries
